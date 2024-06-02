@@ -1,0 +1,1 @@
+  let storeArray = store.slice()
