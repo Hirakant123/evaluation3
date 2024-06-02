@@ -30,12 +30,31 @@ const storeData = {
     sectionNames: ["electronicsSection", "clothingSection"],
   };
   
+
+
+
+  function findProductDetails (storeData){
+
+  let {products:{electronicsSection:{inventory:{laptop:{available}}}}}= storeData
+    console.log("laptopAvailable:" ,available)
+
+let {products:{electronicsSection:{inventory:{laptop:{price}}}}}= storeData
+  console.log( " laptopPrice: " ,price)
+
+   
   
-    function findProductDetails (storeData){
+  }
+
+
+//   function  findProductDetails(storeData){
+
+//     let {clothingSection:{inventory:{shirt:{available}}}}= storeData
+
+//     console.log(" shirtAvailable:",available)
    
    
-        let  {storeData:{storeName}}= storeData
-        console.log(storeName)
-    }
+//   }
+
+
 
 findProductDetails (storeData)
